@@ -40,11 +40,11 @@ return number;
 playerTwo()
 
 
-while(playerOne){
+// while(playerOne){
 
-    if(){
+//     if(){
 
 
-    }
+//     }
 
-}
+// }
