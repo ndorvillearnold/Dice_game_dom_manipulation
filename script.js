@@ -12,20 +12,20 @@ const imagePaths = [
     return Math.floor(Math.random() * imagePaths.length);
    }
 
-  const player1 =  document.getElementById("img1");
-  const player2 =  document.getElementById("img2");
+  const son =  document.getElementById("img1");
+  const daughter =  document.getElementById("img2");
 
   // Get random numbers for each player
 const roll1 = randomNumber();
 const roll2 = randomNumber();
 
 // Set the images based on the random rolls
-player1.setAttribute("src", imagePaths[roll1]);
-player2.setAttribute("src", imagePaths[roll2]);
+son.setAttribute("src", imagePaths[roll1]);
+daughter.setAttribute("src", imagePaths[roll2]);
 
 
-console.log(player1);
-console.log(player2);
+console.log(son);
+console.log(daughter);
 
 
 if (roll1 === roll2 ){
@@ -35,10 +35,10 @@ if (roll1 === roll2 ){
     
    
    }else if(roll1 > roll2 ) {
-document.querySelector("#heading").innerHTML = "Player 1 Wins!"
+document.querySelector("#heading").innerHTML = "My baby girl is washing the dishes!"
 
    }else{
-     document.querySelector("#heading").innerHTML = "Player 2 Wins!"
+     document.querySelector("#heading").innerHTML = "My baby boy is washing dishes!"
 
    }
 
