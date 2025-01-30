@@ -15,28 +15,30 @@ const imagePaths = [
   const player1 =  document.getElementById("img1");
   const player2 =  document.getElementById("img2");
 
-player1.setAttribute("src", imagePaths[randomNumber()]);
-player2.setAttribute("src", imagePaths[randomNumber()]);
+  // Get random numbers for each player
+const roll1 = randomNumber();
+const roll2 = randomNumber();
 
-// let draw = document.querySelector("h1").innerHTML = "DRAW!";
-// let wins = document.querySelector("h1").innerHTML = "Wins!";
+// Set the images based on the random rolls
+player1.setAttribute("src", imagePaths[roll1]);
+player2.setAttribute("src", imagePaths[roll2]);
 
 
 console.log(player1);
 console.log(player2);
 
 
-if (player1 === player2 ){
+if (roll1 === roll2 ){
 
 
-    return document.querySelector("h1").innerHTML = "DRAW!"
+     document.querySelector("#heading").innerHTML = "DRAW!"
     
    
-   }else if(player1 > player2 ) {
-    return document.querySelector("h1").innerHTML = "Player 1 Wins!"
+   }else if(roll1 > roll2 ) {
+document.querySelector("#heading").innerHTML = "Player 1 Wins!"
 
    }else{
-    return document.querySelector("h1").innerHTML = "Player 2 Wins!"
+     document.querySelector("#heading").innerHTML = "Player 2 Wins!"
 
    }
 
