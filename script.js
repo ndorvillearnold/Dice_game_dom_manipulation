@@ -18,25 +18,25 @@ const imagePaths = [
 player1.setAttribute("src", imagePaths[randomNumber()]);
 player2.setAttribute("src", imagePaths[randomNumber()]);
 
-let draw = document.querySelector("h1").innerHTML = "DRAW!";
-let wins = document.querySelector("h1").innerHTML = "Wins!";
+// let draw = document.querySelector("h1").innerHTML = "DRAW!";
+// let wins = document.querySelector("h1").innerHTML = "Wins!";
 
 
 console.log(player1);
 console.log(player2);
 
 
-if (player1 && player2){
+if (player1 === player2 ){
 
 
-    console.log(draw)
+    return document.querySelector("h1").innerHTML = "DRAW!"
     
    
    }else if(player1 > player2 ) {
-    console.log("Player 1 wins" + wins);
+    return document.querySelector("h1").innerHTML = "Player 1 Wins!"
 
    }else{
-    ("Player 2 wins" + wins)
+    return document.querySelector("h1").innerHTML = "Player 2 Wins!"
 
    }
 
