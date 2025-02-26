@@ -1,16 +1,44 @@
-Strategy:
+# Dice Game for Family 😊
 
-1. Create a function to randomize numbers
-2. get both players dice by document by ID
-3. display who wins
-
+This is a fun dice game I created for my family. The game randomly generates dice rolls for two players, then displays the winner based on which player rolled the higher number. It's a simple yet engaging game, and the loser will do the dishes! The game uses DOM manipulation and randomization to update dice rolls each time the page is refreshed.
+since my kids always fight about who is washing the dishes they can just role the dice 😊
 
 
+## Table of Contents
 
-Improve code.
-LATER: Ensure players cant go more then 1 time. It has to be player 1 then 2 each 
-event listener
-if statement to loop through if player one or two
+- [Introduction](#introduction)
+- [How it Works](#how-it-works)
+- [Game Flow](#game-flow)
+- [Improvements](#improvements)
+- [Resources](#resources)
+
+## Introduction
+
+The game allows two players to take turns rolling a dice, and the player with the higher roll wins. The winner is displayed on the screen along with the dice rolls. This is a fun way for my kids to learn about randomness and fairness in a simple way. The main goal is to ensure that only one player rolls at a time.
+
+## How it Works
+
+1. **Randomizing Numbers**: A function is created to generate random numbers for the dice rolls.
+2. **Displaying Dice Rolls**: Both players' dice rolls are displayed using the `document.getElementById()` method.
+3. **Determine Winner**: The game compares the dice rolls and displays who wins.
+
+## Game Flow
+
+1. Player 1 rolls the dice, generating a random number between 1 and 6.
+2. Player 2 rolls their dice.
+3. The game compares the dice rolls.
+4. The player with the higher roll is declared the winner, and the other player will do the dishes!
+
+## Code Improvements (Future Work)
+
+- **Ensure Players Take Turns**: Add logic to ensure that player 1 goes first, followed by player 2. I plan to use event listeners and a loop to enforce this turn-taking order.
+- **Event Listeners**: I will implement event listeners to ensure that players cannot roll more than once per turn and can only roll when it's their turn.
+- **Enhancements**: In the future, I will improve the game's UI, add animations, and perhaps introduce more features like score tracking.
 
 
-Simply click on refresh on the browser to see dice change ! I will enhance code when I can
+
+## Contributing
+
+Feel free to fork the repository, open issues, or submit pull requests to improve the game. Contributions are welcome!
+
+
